@@ -1,4 +1,4 @@
-* {
+html,section,div,body,h1,p,ul,li,img {
   padding: 0;
   margin: 0;
 }
@@ -24,25 +24,35 @@ footer, header, main, nav, section {
   top: 0;
   left: 80%;
 }
-ul {
+.fixed-top ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
-li {
+.fixed-top ul li {
   float: left;
 }
-li a {
+.fixed-top ul li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-li a:hover {
+.fixed-top ul li a:hover {
   background-color: #111;
+}
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 14px;
+  padding-top: 50px;
+  line-height: 1.7em;
 }
 .right {
   float: right;
@@ -55,26 +65,58 @@ li a:hover {
   text-align: center;
   background: #f3f;
 }
-.overview {
+.overview-content {
+  padding: 250px;
   text-align: center;
-  background: #f3f;
+  background: #F18928;
 }
-.usps {
-  text-align: center;
-  background: #fe3;
+.usps-content {
+  display: block;
+  margin: 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #33FFC1;
+}
+.usps-content .usps-content-list {
+  padding-left: 70px;
+  padding: 36px;
+  border-right: 3px solid #000;
 }
 
-.about-us {
-  text-align: center;
-  background: #fef;
+.usps-content #left {
+  overflow: hidden;
+  float: left;
 }
-.amenities {
-  text-align: center;
-  background: #ef3;
+.usps-content #right {
+  float: right;
 }
-.specification {
+.usps-content-list li {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.about-us-content {
+  padding: 250px;
   text-align: center;
+  background: #F18928;
+}
+.amenities-content {
+  color: #fff;
+  padding: 200px;
+  text-align: center;
+  background: #000;
+}
+.specification-content {
+  padding: 200px;
   background: #f3f;
+}
+.specification-content h1 {
+  float: left;
+  padding-left: 20px;
+  color: #fff;
 }
 .floor-plan {
   text-align: center;
